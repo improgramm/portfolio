@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ebe8671de6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#services">services</a> </li>
+                    <li> <a href="#portfolio">Portfolio</a> </li>
+                    <li> <a href="#contact">contact</a> </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1> Hi, I am <span>Awez Manyar</span><br> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------- About me part------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="bg3.jpg" alt="">
+                </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempora, accusantium dolorem
+                            nisi nesciunt eaque voluptatibus delectus libero a,
+                            maxime saepe earum porro sunt illo,
+                            commodi aliquid perspiciatis natus sapiente?</p>
+
+                        <div class="tab-title">
+                            <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>UI/UX</span><br> Designing web/app interfaces</li>
+                                <li><span>Web Development</span><br> Web app Development</li>
+                                <li><span>problem solving</span><br> quiet good in problem solving</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2022</span><br> Data science Intern from Lets Grow more</li>
+                                <li><span>2021</span><br> Navigation Robot project </li>
+                                <li><span>2021</span><br> Team lead in college project </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2020 - Current</span><br> B.Tech CSE from GHRIEM</li>
+                                <li><span>2018-19</span><br>HSC from IGM College</li>
+                                <li><span>2017-18</span><br> SSC from AUH school</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------services----------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos dignissimos est quibusdam officia consequatur magni aut doloremque at. Repellendus distinctio quasi exercitationem ullam possimus perspiciatis nemo nostrum explicabo consequuntur!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Designer</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos dignissimos est quibusdam officia consequatur magni aut doloremque at. Repellendus distinctio quasi exercitationem ullam possimus perspiciatis nemo nostrum explicabo consequuntur!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>  <!--this is for design logo-->
+                    <h2>Problem solving Skill</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos dignissimos est quibusdam officia consequatur magni aut doloremque at. Repellendus distinctio quasi exercitationem ullam possimus perspiciatis nemo nostrum explicabo consequuntur!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------portfolio--------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="bg1.png" alt="work img 1">
+                    <div class="layer">
+                        <h3>social Media app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="bg1.png" alt=" work img 2">
+                    <div class="layer">
+                        <h3>social Media app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id</p>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="bg1.png" alt="work img 3">
+                    <div class="layer">
+                        <h3>social Media app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+
+    <!-- ----------------------------contact----------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class = "fas fa-paper-plane"></i> awezmanyar1672@gmail.com</p>
+                    <p><i class = "fas fa-phone-square-alt"></i> 9561915388</p>
+                    <br>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/Iamawez_02"> <i class="fab fa-twitter-square"></i> </a>
+                        <a href="https://www.instagram.com/iamawez_02/"> <i class="fab fa-instagram"></i> </a>
+                        <a href="https://www.linkedin.com/in/aawesh-manyar-9b1a78233"> <i class="fab fa-linkedin"></i> </a>
+                    </div>
+                    <a href="images/mycv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea type="text" name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright this is made by Awez <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-links")
+
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzkHN4Xcx480heBfxLtBegE-1DcGwMDerBigV8M1SKj1B5eW7p64CHOnXDI0ZFy63agZg/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },4000)
+
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+<!-- side menue -->
+
+<script>
+       var sidemenu = document.getElementById("sidemenu");
+
+       function openmenu(){
+        sidemenu.style.right="0";
+       }
+       
+       function closemenu(){
+        sidemenu.style.right="-200px";
+       }
+
+</script>
+</body>
+
+</html>
